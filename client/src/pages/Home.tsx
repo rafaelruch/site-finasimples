@@ -3,7 +3,6 @@ import HowItWorks from "@/components/HowItWorks";
 import Pricing from "@/components/Pricing";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
-import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export default function Home() {
   return (
@@ -13,7 +12,6 @@ export default function Home() {
       <Pricing />
       <Features />
       <Footer />
-      <FloatingWhatsApp />
     </div>
   );
 }
