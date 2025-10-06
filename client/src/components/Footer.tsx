@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { MessageCircle, Instagram, Linkedin, Mail } from "lucide-react";
+import { Link } from "wouter";
 import logoImage from "@assets/logo-light-finasimples_1759756891447.png";
 
 export default function Footer() {
@@ -77,19 +78,14 @@ export default function Footer() {
             <h4 className="font-bold text-background">Empresa</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors" data-testid="link-about">
+                <Link href="/sobre" className="text-background/80 hover:text-background transition-colors" data-testid="link-about">
                   Sobre Nós
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors" data-testid="link-blog">
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-background/80 hover:text-background transition-colors" data-testid="link-careers">
+                <Link href="/carreiras" className="text-background/80 hover:text-background transition-colors" data-testid="link-careers">
                   Carreiras
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -114,12 +110,12 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/60">
             <p>© 2024 FinaSimples. Todos os direitos reservados.</p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-background transition-colors" data-testid="link-privacy">
+              <Link href="/privacidade" className="hover:text-background transition-colors" data-testid="link-privacy">
                 Privacidade
-              </a>
-              <a href="#" className="hover:text-background transition-colors" data-testid="link-terms">
+              </Link>
+              <Link href="/termos" className="hover:text-background transition-colors" data-testid="link-terms">
                 Termos de Uso
-              </a>
+              </Link>
             </div>
           </div>
         </div>
