@@ -25,7 +25,7 @@ export default function Hero() {
       
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 pt-6 relative z-10">
         <div className="flex items-center justify-between">
-          <img src={logoImage} alt="FinaSimples" className="h-12 md:h-16" data-testid="logo-hero" />
+          <img src={logoImage} alt="FinaSimples - Gestão Financeira pelo WhatsApp" className="h-12 md:h-16" width="200" height="64" data-testid="logo-hero" />
           <Button 
             variant="outline" 
             className="bg-background/60 backdrop-blur-sm"
@@ -43,8 +43,8 @@ export default function Hero() {
           <div className="flex-1 text-center lg:text-left space-y-8">
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-              Suas finanças{" "}
-              <span className="text-primary">simples</span> pelo WhatsApp
+              Gestão Financeira{" "}
+              <span className="text-primary">Simples</span> pelo WhatsApp
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto lg:mx-0">
@@ -105,8 +105,11 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-[#0100ff]/20 rounded-3xl blur-3xl opacity-50" />
               <img 
                 src={heroMockup} 
-                alt="WhatsApp Financial Dashboard" 
+                alt="Interface de gestão financeira no WhatsApp mostrando controle de receitas e despesas" 
                 className="relative rounded-2xl shadow-2xl w-full h-auto"
+                width="600"
+                height="800"
+                loading="eager"
                 data-testid="img-hero-mockup"
               />
             </div>

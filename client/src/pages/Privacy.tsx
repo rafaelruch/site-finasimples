@@ -17,7 +17,7 @@ export default function Privacy() {
               </Button>
             </Link>
             <Link href="/">
-              <img src={logoImage} alt="FinaSimples" className="h-8" data-testid="logo-header" />
+              <img src={logoImage} alt="FinaSimples - Gestão Financeira pelo WhatsApp" className="h-8" width="120" height="32" loading="lazy" data-testid="logo-header" />
             </Link>
             <div className="w-[140px]" />
           </div>

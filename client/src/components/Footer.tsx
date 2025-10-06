@@ -18,7 +18,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           <div className="space-y-4">
-            <img src={logoImage} alt="FinaSimples" className="h-10 brightness-0 invert" data-testid="logo-footer" />
+            <img src={logoImage} alt="FinaSimples - Gestão Financeira pelo WhatsApp" className="h-10 brightness-0 invert" width="150" height="40" loading="lazy" data-testid="logo-footer" />
             <p className="text-background/80 leading-relaxed">
               Gestão financeira simples e fácil pelo WhatsApp.
             </p>
