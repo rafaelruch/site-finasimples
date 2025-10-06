@@ -17,6 +17,7 @@ const plans = [
     cta: "Começar Agora",
     popular: false,
     borderColor: "border-primary/30",
+    paymentLink: "https://www.asaas.com/c/lpo68or5lg3qqcsl",
   },
   {
     name: "Pessoa Jurídica",
@@ -34,13 +35,14 @@ const plans = [
     cta: "Começar Agora",
     popular: true,
     borderColor: "border-[#0100ff]/30",
+    paymentLink: "https://www.asaas.com/c/xdxs6mis7090sg54",
   },
 ];
 
 export default function Pricing() {
-  const handlePlanClick = (planName: string) => {
+  const handlePlanClick = (planName: string, paymentLink: string) => {
     console.log(`Plan selected: ${planName}`);
-    window.open("https://wa.me/5511999999999?text=Olá! Quero contratar o plano " + planName, "_blank", "noopener,noreferrer");
+    window.open(paymentLink, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -105,7 +107,7 @@ export default function Pricing() {
                     className="w-full text-base font-semibold mt-6"
                     size="lg"
                     variant={plan.popular ? "default" : "outline"}
-                    onClick={() => handlePlanClick(plan.name)}
+                    onClick={() => handlePlanClick(plan.name, plan.paymentLink)}
                     data-testid={`button-select-plan-${index}`}
                   >
                     {plan.cta}
