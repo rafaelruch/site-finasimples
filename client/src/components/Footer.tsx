@@ -108,7 +108,7 @@ export default function Footer() {
 
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-background/60">
-            <p>© 2024 FinaSimples. Todos os direitos reservados.</p>
+            <p>© {new Date().getFullYear()} FinaSimples. Todos os direitos reservados.</p>
             <div className="flex gap-6">
               <Link href="/privacidade" className="hover:text-background transition-colors" data-testid="link-privacy">
                 Privacidade
