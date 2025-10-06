@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { MessageCircle, ArrowRight } from "lucide-react";
+import { MessageCircle, ArrowRight, LogIn } from "lucide-react";
 import logoImage from "@assets/logo-light-finasimples_1759756891447.png";
 import heroMockup from "@assets/generated_images/WhatsApp_financial_dashboard_mockup_f469e187.png";
 
@@ -14,16 +14,33 @@ export default function Hero() {
     document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const handleLoginClick = () => {
+    console.log("Entrar clicked");
+    window.open("https://app.finasimples.com.br/", "_blank", "noopener,noreferrer");
+  };
+
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-[#0100ff]/10 via-background to-[#13d417]/10">
+    <section className="relative min-h-screen flex flex-col overflow-hidden bg-gradient-to-br from-[#0100ff]/10 via-background to-[#13d417]/10">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(1,0,255,0.08),transparent_50%),radial-gradient(circle_at_70%_60%,rgba(19,212,23,0.08),transparent_50%)]" />
       
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-24 md:py-32 relative z-10">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+      <div className="max-w-7xl mx-auto w-full px-6 md:px-12 pt-6 relative z-10">
+        <div className="flex items-center justify-between">
+          <img src={logoImage} alt="FinaSimples" className="h-10 md:h-12" data-testid="logo-hero" />
+          <Button 
+            variant="outline" 
+            className="bg-background/60 backdrop-blur-sm"
+            onClick={handleLoginClick}
+            data-testid="button-login"
+          >
+            <LogIn className="w-4 h-4 mr-2" />
+            Entrar
+          </Button>
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-20 relative z-10 flex-1 flex items-center">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16 w-full">
           <div className="flex-1 text-center lg:text-left space-y-8">
-            <div className="inline-block mb-4">
-              <img src={logoImage} alt="FinaSimples" className="h-12 md:h-16" data-testid="logo-hero" />
-            </div>
             
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
               Suas finanças{" "}
