@@ -40,7 +40,7 @@ const plans = [
 export default function Pricing() {
   const handlePlanClick = (planName: string) => {
     console.log(`Plan selected: ${planName}`);
-    window.open("https://wa.me/5511999999999?text=Olá! Quero contratar o plano " + planName, "_blank");
+    window.open("https://wa.me/5511999999999?text=Olá! Quero contratar o plano " + planName, "_blank", "noopener,noreferrer");
   };
 
   return (

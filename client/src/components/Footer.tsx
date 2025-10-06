@@ -5,7 +5,7 @@ import logoImage from "@assets/logo-light-finasimples_1759756891447.png";
 export default function Footer() {
   const handleWhatsAppClick = () => {
     console.log("Footer WhatsApp clicked");
-    window.open("https://wa.me/5511999999999", "_blank");
+    window.open("https://wa.me/5511999999999", "_blank", "noopener,noreferrer");
   };
 
   const handleSocialClick = (platform: string) => {

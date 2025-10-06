@@ -6,7 +6,7 @@ import heroMockup from "@assets/generated_images/WhatsApp_financial_dashboard_mo
 export default function Hero() {
   const handleWhatsAppClick = () => {
     console.log("WhatsApp CTA clicked");
-    window.open("https://wa.me/5511999999999", "_blank");
+    window.open("https://wa.me/5511999999999", "_blank", "noopener,noreferrer");
   };
 
   const handlePricingClick = () => {

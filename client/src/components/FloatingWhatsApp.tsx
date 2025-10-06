@@ -16,7 +16,7 @@ export default function FloatingWhatsApp() {
 
   const handleClick = () => {
     console.log("Floating WhatsApp clicked");
-    window.open("https://wa.me/5511999999999", "_blank");
+    window.open("https://wa.me/5511999999999", "_blank", "noopener,noreferrer");
   };
 
   if (!isVisible) return null;
