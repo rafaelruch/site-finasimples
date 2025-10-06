@@ -25,7 +25,7 @@ export default function Hero() {
       
       <div className="max-w-7xl mx-auto w-full px-6 md:px-12 pt-6 relative z-10">
         <div className="flex items-center justify-between">
-          <img src={logoImage} alt="FinaSimples" className="h-10 md:h-12" data-testid="logo-hero" />
+          <img src={logoImage} alt="FinaSimples" className="h-12 md:h-16" data-testid="logo-hero" />
           <Button 
             variant="outline" 
             className="bg-background/60 backdrop-blur-sm"
