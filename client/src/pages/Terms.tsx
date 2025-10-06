@@ -2,18 +2,25 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import Footer from "@/components/Footer";
+import logoImage from "@assets/logo-light-finasimples_1759756891447.png";
 
 export default function Terms() {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="border-b bg-background sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-4">
-          <Link href="/">
-            <Button variant="ghost" size="sm" data-testid="button-back-home">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Voltar para Home
-            </Button>
-          </Link>
+          <div className="flex items-center justify-between">
+            <Link href="/">
+              <Button variant="ghost" size="sm" data-testid="button-back-home">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Voltar para Home
+              </Button>
+            </Link>
+            <Link href="/">
+              <img src={logoImage} alt="FinaSimples" className="h-8" data-testid="logo-header" />
+            </Link>
+            <div className="w-[140px]" />
+          </div>
         </div>
       </header>
 
@@ -200,7 +207,6 @@ export default function Terms() {
                 </p>
                 <ul className="list-none space-y-2 text-muted-foreground">
                   <li>Email: suporte@finasimples.com.br</li>
-                  <li>WhatsApp: (11) 99999-9999</li>
                 </ul>
               </div>
             </div>
